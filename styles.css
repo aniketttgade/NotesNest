@@ -1,0 +1,98 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ffacac;
+  animation: slideIn 1s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('wp6200336.webp'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover;
+  /**background-color: rgb(44, 44, 44);**/
+
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+.New-Note {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #beffda;
+  color: #000000;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.New-Note:hover {
+  background-color: #6ddd8d;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  background-color: #7886ffa4;
+  border-radius: 10px;
+}
+
+.download-button {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(180, 223, 255);
+  border: none;
+  margin-left: 10px;
+  border-radius: 50%;
+
+}
+
+.delete-button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(236, 30, 30);
+}
+
+
+h2 {
+  color: #000000;
+  font-weight: bolder;
+
+}
+
+p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 19px;
+}

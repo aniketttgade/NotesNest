@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Write</title>
+  <link rel="stylesheet" href="write-article.css">
+  
+
+</head>
+<body>
+  <div class="menu">
+    <a href="write-article.html" class="write-article">Write Article</a>
+    <a href="view-notes.html" class="view-articles">View Articles</a>
+  </div>
+
+  <div class="header">
+    <h1>Write Your Memorible Note</h1>
+  </div>
+
+  <form id="articleForm">
+    <label for="articleTitle" class="title_text">Title:</label>
+    <input class="title_box" type="text" id="articleTitle" name="articleTitle" required>
+
+    <label for="articleContent" class="content_text">Content:</label>
+    <textarea class="content_box" id="articleContent" name="articleContent" rows="8" required></textarea>
+    <button type="submit">Submit Article</button>
+  </form>
+  <script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="write-article.js"></script>
+</body>
+</html>

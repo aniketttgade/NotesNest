@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Wallpaper.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: contain;
+    
+    color: #333;
+  }
+  
+  .menu {
+    background-color: #7fcee277;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #34495e;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #ff6ce9;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+  }
+  
+  #articleForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #2980b9;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #1db99d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #34db7a;
+  }
+  .content_box {
+    background-color: rgba(255, 255, 255, 0.668);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+.title_box {
+    background-color: #d9fff87e;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.title_text {
+  color: #6fff00;
+  font-size: 20px;
+}
+
+.content_text{
+  color: #ffbd06;
+  font-size: 20px;
+}
