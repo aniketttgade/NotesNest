@@ -26,11 +26,33 @@
   </div>
   <script src="view-articles.js"></script>
   <script>
-    
-  </script>
-</body>
-</html>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
 
+      // Function to handle search
+      function handleSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const articles = document.querySelectorAll('.article');
+
+        articles.forEach(article => {
+          const title = article.querySelector('h2').textContent.toLowerCase();
+
+          if (title.includes(searchTerm)) {
+            article.style.display = 'block'; // Show the article if its title matches the search
+          } else {
+            article.style.display = 'none'; // Hide the article if its title doesn't match the search
+          }
+        });
+      }
+
+      // Event listener for search button click
+      searchButton.addEventListener('click', handleSearch);
+
+      // Optional: You can also add an event listener for the input field to trigger search on keyup
+      searchInput.addEventListener('keyup', handleSearch);
+    });
+  </script>
     
   </div>
   <script src="view-articles.js"></script>
